@@ -575,6 +575,13 @@ section .container {
   border-left: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
 }
+.resume .resume-item #project_date{
+  display: flex;
+  justify-content: space-between;
+  color: #63eda3;
+  font-size: 14px;
+}
+
 .resume .resume-item a{
   color: #18d26e;
 }
@@ -604,7 +611,7 @@ section .container {
 }
 
 .resume .resume-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .resume .resume-item:last-child {
