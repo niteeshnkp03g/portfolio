@@ -414,7 +414,7 @@ section .container {
   color: #18d26e;
 }
 .img-fluid{
-  border-radius: 80px 35px 80px 45px;
+  border-radius: 40px 35px 40px 35px ;
 }
 
 .about-me .content ul {
