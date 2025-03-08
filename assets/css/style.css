@@ -415,6 +415,8 @@ section .container {
 }
 .img-fluid{
   border-radius: 40px 35px 40px 35px ;
+  max-width: 80%;
+  height: auto;
 }
 
 .about-me .content ul {
