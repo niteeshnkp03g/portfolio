@@ -55,58 +55,74 @@
   })
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '#navbar .nav-link', function(e) {
-    let section = select(this.hash)
-    if (section) {
-      e.preventDefault()
+ * Smooth scrolling navigation
+ */
+on('click', '#navbar .nav-link', function(e) {
 
-      let navbar = select('#navbar')
-      let header = select('#header')
-      let sections = select('section', true)
-      let navlinks = select('#navbar .nav-link', true)
+  const target = document.querySelector(this.getAttribute('href'));
 
-      navlinks.forEach((item) => {
-        item.classList.remove('active')
-      })
+  if (target) {
 
-      this.classList.add('active')
+    e.preventDefault();
 
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
+    document.querySelectorAll('#navbar .nav-link').forEach(link => {
+      link.classList.remove('active');
+    });
 
-      if (this.hash == '#header') {
-        header.classList.remove('header-top')
-        sections.forEach((item) => {
-          item.classList.remove('section-show')
-        })
-        return;
-      }
+    this.classList.add('active');
 
-      if (!header.classList.contains('header-top')) {
-        header.classList.add('header-top')
-        setTimeout(function() {
-          sections.forEach((item) => {
-            item.classList.remove('section-show')
-          })
-          section.classList.add('section-show')
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
 
-        }, 350);
-      } else {
-        sections.forEach((item) => {
-          item.classList.remove('section-show')
-        })
-        section.classList.add('section-show')
-      }
+    if (select('#navbar').classList.contains('navbar-mobile')) {
 
-      scrollto(this.hash)
+      select('#navbar').classList.remove('navbar-mobile');
+
+      let navbarToggle = select('.mobile-nav-toggle');
+
+      navbarToggle.classList.toggle('bi-list');
+      navbarToggle.classList.toggle('bi-x');
+
     }
-  }, true)
+
+  }
+
+}, true);
+
+
+/**
+ * Update active menu while scrolling
+ */
+window.addEventListener('scroll', () => {
+
+  let sections = document.querySelectorAll('section');
+  let navLinks = document.querySelectorAll('#navbar .nav-link');
+
+  let current = '';
+
+  sections.forEach(section => {
+
+    const sectionTop = section.offsetTop - 120;
+
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+
+  });
+
+  navLinks.forEach(link => {
+
+    link.classList.remove('active');
+
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
+
+  });
+
+});
 
   /**
    * Activate/show sections on load with hash links
