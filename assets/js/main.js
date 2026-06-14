@@ -1,39 +1,39 @@
 /**
-* Template Name: Personal
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
+ * Template Name: Personal
+ * Updated: Sep 18 2023 with Bootstrap v5.3.2
+ * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+ * Author: BootstrapMade.com
+ * License: https://bootstrapmade.com/license/
+ */
+(function () {
   "use strict";
 
   /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim()
+    el = el.trim();
     if (all) {
-      return [...document.querySelectorAll(el)]
+      return [...document.querySelectorAll(el)];
     } else {
-      return document.querySelector(el)
+      return document.querySelector(el);
     }
-  }
+  };
 
   /**
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
+    let selectEl = select(el, all);
 
     if (selectEl) {
       if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
+        selectEl.forEach((e) => e.addEventListener(type, listener));
       } else {
-        selectEl.addEventListener(type, listener)
+        selectEl.addEventListener(type, listener);
       }
     }
-  }
+  };
 
   /**
    * Scrolls to an element with header offset
@@ -41,115 +41,106 @@
   const scrollto = (el) => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+  on("click", ".mobile-nav-toggle", function (e) {
+    select("#navbar").classList.toggle("navbar-mobile");
+    this.classList.toggle("bi-list");
+    this.classList.toggle("bi-x");
+  });
 
   /**
- * Smooth scrolling navigation
- */
-on('click', '#navbar .nav-link', function(e) {
+   * Smooth scrolling navigation
+   */
+  on(
+    "click",
+    "#navbar .nav-link",
+    function (e) {
+      const target = document.querySelector(this.getAttribute("href"));
 
-  const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
 
-  if (target) {
+        document.querySelectorAll("#navbar .nav-link").forEach((link) => {
+          link.classList.remove("active");
+        });
 
-    e.preventDefault();
+        this.classList.add("active");
 
-    document.querySelectorAll('#navbar .nav-link').forEach(link => {
-      link.classList.remove('active');
+        window.scrollTo({
+          top: target.offsetTop - 30,
+          behavior: "smooth",
+        });
+        if (select("#navbar").classList.contains("navbar-mobile")) {
+          select("#navbar").classList.remove("navbar-mobile");
+
+          let navbarToggle = select(".mobile-nav-toggle");
+
+          navbarToggle.classList.toggle("bi-list");
+          navbarToggle.classList.toggle("bi-x");
+        }
+      }
+    },
+    true,
+  );
+
+  /**
+   * Update active menu while scrolling
+   */
+  window.addEventListener("scroll", () => {
+    let sections = document.querySelectorAll("section");
+    let navLinks = document.querySelectorAll("#navbar .nav-link");
+
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 120;
+
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
     });
 
-    this.classList.add('active');
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
 
-    target.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
     });
-
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-
-      select('#navbar').classList.remove('navbar-mobile');
-
-      let navbarToggle = select('.mobile-nav-toggle');
-
-      navbarToggle.classList.toggle('bi-list');
-      navbarToggle.classList.toggle('bi-x');
-
-    }
-
-  }
-
-}, true);
-
-
-/**
- * Update active menu while scrolling
- */
-window.addEventListener('scroll', () => {
-
-  let sections = document.querySelectorAll('section');
-  let navLinks = document.querySelectorAll('#navbar .nav-link');
-
-  let current = '';
-
-  sections.forEach(section => {
-
-    const sectionTop = section.offsetTop - 120;
-
-    if (window.scrollY >= sectionTop) {
-      current = section.getAttribute('id');
-    }
-
   });
-
-  navLinks.forEach(link => {
-
-    link.classList.remove('active');
-
-    if (link.getAttribute('href') === '#' + current) {
-      link.classList.add('active');
-    }
-
-  });
-
-});
 
   /**
    * Activate/show sections on load with hash links
    */
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     if (window.location.hash) {
-      let initial_nav = select(window.location.hash)
+      let initial_nav = select(window.location.hash);
 
       if (initial_nav) {
-        let header = select('#header')
-        let navlinks = select('#navbar .nav-link', true)
+        let header = select("#header");
+        let navlinks = select("#navbar .nav-link", true);
 
-        header.classList.add('header-top')
+        header.classList.add("header-top");
 
         navlinks.forEach((item) => {
-          if (item.getAttribute('href') == window.location.hash) {
-            item.classList.add('active')
+          if (item.getAttribute("href") == window.location.hash) {
+            item.classList.add("active");
           } else {
-            item.classList.remove('active')
+            item.classList.remove("active");
           }
-        })
+        });
 
-        setTimeout(function() {
-          initial_nav.classList.add('section-show')
+        setTimeout(function () {
+          initial_nav.classList.add("section-show");
         }, 350);
 
-        scrollto(window.location.hash)
+        scrollto(window.location.hash);
       }
     }
   });
@@ -157,113 +148,116 @@ window.addEventListener('scroll', () => {
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
+  let skilsContent = select(".skills-content");
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
+      offset: "80%",
+      handler: function (direction) {
+        let progress = select(".progress .progress-bar", true);
         progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
+          el.style.width = el.getAttribute("aria-valuenow") + "%";
         });
-      }
-    })
+      },
+    });
   }
 
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper(".testimonials-slider", {
     speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
     },
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
 
       1200: {
         slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
+        spaceBetween: 20,
+      },
+    },
   });
 
   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+  window.addEventListener("load", () => {
+    let portfolioContainer = select(".portfolio-container");
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        itemSelector: ".portfolio-item",
+        layoutMode: "fitRows",
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let portfolioFilters = select("#portfolio-flters li", true);
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
+      on(
+        "click",
+        "#portfolio-flters li",
+        function (e) {
+          e.preventDefault();
+          portfolioFilters.forEach(function (el) {
+            el.classList.remove("filter-active");
+          });
+          this.classList.add("filter-active");
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-      }, true);
+          portfolioIsotope.arrange({
+            filter: this.getAttribute("data-filter"),
+          });
+        },
+        true,
+      );
     }
-
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+    selector: ".portfolio-lightbox",
   });
 
   /**
-   * Initiate portfolio details lightbox 
+   * Initiate portfolio details lightbox
    */
   const portfolioDetailsLightbox = GLightbox({
-    selector: '.portfolio-details-lightbox',
-    width: '90%',
-    height: '90vh'
+    selector: ".portfolio-details-lightbox",
+    width: "90%",
+    height: "90vh",
   });
 
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper(".portfolio-details-slider", {
     speed: 400,
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
-
-})()
+})();

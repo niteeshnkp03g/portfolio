@@ -60,7 +60,8 @@ h6 {
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
-  height: 100vh;
+  min-height:100vh;
+  height:auto;
   display: flex;
   align-items: center;
   z-index: 997;
@@ -440,37 +441,28 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  top: 140px;
-  bottom: 100%;
-  opacity: 0;
-  transition: ease-in-out 0.4s;
-  z-index: 2;
+html{
+  scroll-behavior:smooth;
 }
 
-section.section-show {
-  top: 100px;
-  bottom: auto;
-  opacity: 1;
-  padding-bottom: 45px;
+section{
+  position:relative;
+  width:100%;
+  padding:40px 0;
+  opacity:1;
+  overflow:visible;
+  scroll-margin-top:40px;
+}
+
+section .container{
+  background:rgba(0,0,0,.85);
+  padding:30px;
+  border-radius:20px;
 }
 
 section .container {
   background: rgba(0, 0, 0, 0.9);
   padding: 30px;
-}
-
-@media (max-width: 768px) {
-  section {
-    top: 120px;
-  }
-
-  section.section-show {
-    top: 80px;
-  }
 }
 
 .section-title h2 {
@@ -507,78 +499,143 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-
-.about{
-  padding-top:60px;
-}
-
 .about-me .content h3{
 
   color:#18d26e;
-
   font-size:30px;
-
   font-weight:700;
-
   margin-bottom:25px;
 
 }
 
 .p-text{
 
-  color:rgba(255,255,255,.85);
-
-  line-height:1.9;
-
-  font-size:16px;
-
   text-align:justify;
+  line-height:1.9;
+  color:rgba(255,255,255,.90);
 
 }
+
+/* About Bullet Points */
+
+.about-points{
+
+  margin-top:25px;
+
+}
+
+.about-point{
+
+  display:flex;
+  align-items:flex-start;
+  gap:15px;
+  margin-bottom:18px;
+  color:rgba(255,255,255,.92);
+  line-height:1.8;
+  font-size:18px;
+
+}
+
+.about-point i{
+
+  color:#18d26e;
+  font-size:18px;
+  margin-top:7px;
+  flex-shrink:0;
+
+}
+
+.about-point span{
+
+  flex:1;
+
+}
+
+/* About Skill Highlights */
 
 .about-highlights{
 
   display:flex;
-
   flex-wrap:wrap;
-
   gap:15px;
-
-  margin-top:30px;
+  margin-top:35px;
 
 }
 
 .highlight-item{
 
   background:rgba(255,255,255,.05);
-
+  backdrop-filter:blur(10px);
   border:1px solid rgba(255,255,255,.08);
-
-  padding:12px 18px;
-
-  border-radius:12px;
-
+  padding:14px 22px;
+  border-radius:14px;
   color:#fff;
-
-  font-size:14px;
-
-  transition:.3s ease;
+  font-size:15px;
+  transition:all .3s ease;
 
 }
 
 .highlight-item:hover{
 
   border-color:#18d26e;
-
-  transform:translateY(-3px);
+  transform:translateY(-4px);
+  box-shadow:0 0 20px rgba(24,210,110,.15);
 
 }
 
 .highlight-item i{
 
   color:#18d26e;
+  margin-right:10px;
 
-  margin-right:8px;
+}
+
+/* About Card Container */
+
+.about-me{
+
+  background:rgba(0,0,0,.35);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:20px;
+  padding:40px;
+
+}
+
+/* Section Title */
+
+.about .section-title h2{
+
+  color:rgba(255,255,255,.65);
+  letter-spacing:3px;
+  font-size:14px;
+
+}
+
+.about .section-title p{
+
+  font-size:48px;
+  font-weight:700;
+  color:#fff;
+  margin-top:10px;
+
+}
+
+/* Mobile Responsive */
+
+@media(max-width:992px){
+
+  .about-me{
+
+    padding:30px;
+
+  }
+
+  .about .section-title p{
+
+    font-size:36px;
+
+  }
 
 }
 
@@ -590,9 +647,23 @@ section .container {
 
   }
 
-  .p-text{
+  .about .section-title p{
 
-    text-align:left;
+    font-size:30px;
+
+  }
+
+  .about-point{
+
+    font-size:16px;
+    line-height:1.7;
+
+  }
+
+  .highlight-item{
+
+    width:100%;
+    text-align:center;
 
   }
 
