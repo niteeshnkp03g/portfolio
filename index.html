@@ -1,685 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Niteesh Kumar Patel</title>
-  <link rel="icon" type="image/x-icon" href="./assets/img/profile-line.png">
-  <meta content="" name="description">
-  <meta content="Portfolio - Niteesh Kumar Patel" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niteesh Kumar Patel — SRE Portfolio</title>
+  <meta name="description" content="Site Reliability Engineer | Cloud Engineer | Product Support Engineer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
+<!-- ── CURSOR ── -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
 
-    <div class="container hero-wrapper">
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="nav-logo">NKP<span class="dot">.</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+    <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-      <!-- Left Content -->
-      <div class="hero-content">
+<!-- ── MOBILE MENU ── -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#hero" class="mob-link">Home</a></li>
+    <li><a href="#about" class="mob-link">About</a></li>
+    <li><a href="#skills" class="mob-link">Skills</a></li>
+    <li><a href="#resume" class="mob-link">Resume</a></li>
+    <li><a href="#contact" class="mob-link">Contact</a></li>
+  </ul>
+</div>
 
-        <h1>
-          <a href="index.html">
-            Niteesh Kumar Patel
-          </a>
-        </h1>
-
-        <h2>
-          Site Reliability Engineer
-        </h2>
-
-        <p class="hero-role">
-          Product Support Engineer • Cloud Engineer
-        </p>
-
-        <p class="hero-focus">
-          Observability • Monitoring • Reliability Engineering
-        </p>
-
-        <div class="hero-actions">
-
-          <a href="assets/resume/Niteesh_Kumar_Patel_Resume.pdf" target="_blank" class="btn btn-success resume-btn">
-
-            Download Resume
-
-          </a>
-
-        </div>
-
-        <div class="hero-metrics">
-
-          <div class="metric">
-            <h3>4+</h3>
-            <span>Years</span>
-          </div>
-
-          <div class="metric">
-            <h3>30K+</h3>
-            <span>Servers</span>
-          </div>
-
-          <div class="metric">
-            <h3>99.9%</h3>
-            <span>Uptime</span>
-          </div>
-
-          <div class="metric">
-            <h3>250+</h3>
-            <span>Monthly Incidents</span>
-          </div>
-
-        </div>
-
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link active" href="#header">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#resume">Resume</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-
-          <i class="bi bi-list mobile-nav-toggle"></i>
-
-        </nav>
-
-        <div class="social-links">
-
-          <a href="https://www.linkedin.com/in/niteesh-kumar-patel-713865189" class="linkedin" target="_blank">
-            <i class="bi bi-linkedin"></i>
-          </a>
-
-          <a href="https://github.com/niteeshnkp03g" class="github" target="_blank">
-            <i class="bi bi-github"></i>
-          </a>
-
-          <a href="https://www.instagram.com/niteesh.kumarpatel/" class="instagram" target="_blank">
-            <i class="bi bi-instagram"></i>
-          </a>
-
-        </div>
-
+<!-- ── HERO ── -->
+<section id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-container">
+    <div class="hero-text">
+      <p class="hero-eyebrow reveal-up" style="--d:0s">
+        <span class="terminal-prompt">$</span> whoami
+      </p>
+      <h1 class="hero-name reveal-up" style="--d:0.1s">
+        Niteesh<br><span class="name-accent">Kumar Patel</span>
+      </h1>
+      <div class="hero-role-wrap reveal-up" style="--d:0.2s">
+        <span class="role-static">I am a</span>
+        <span class="role-typed" id="typedRole"></span>
+        <span class="cursor-blink">|</span>
       </div>
-
-      <!-- Right Profile Image -->
-      <div class="hero-image">
-
-        <img src="assets/img/me.png" alt="Niteesh Kumar Patel" class="profile-photo">
-
+      <p class="hero-focus reveal-up" style="--d:0.3s">
+        Observability &nbsp;·&nbsp; Monitoring &nbsp;·&nbsp; Reliability Engineering
+      </p>
+      <div class="hero-cta reveal-up" style="--d:0.4s">
+        <a href="assets/resume/Niteesh_Kumar_Patel_Resume.pdf" target="_blank" class="btn-primary">
+          <i class="fa fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
       </div>
-
-    </div>
-
-  </header>
-  <!-- End Header -->
-
-  <!-- ======= About Section ======= -->
-
-  <section id="about" class="about">
-
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn More About Me</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-12 content" data-aos="fade-up">
-
-          <h3>Site Reliability Engineer | Product Support Engineer | Cloud Engineer</h3>
-
-          <div class="about-points">
-
-            <div class="about-point">
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                4+ years of experience supporting enterprise applications across AWS, Private Cloud and WebSphere (WAS)
-                environments.
-              </span>
-            </div>
-
-            <div class="about-point">
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Specialized in Monitoring, Observability, Incident Management, Root Cause Analysis (RCA) and Reliability
-                Engineering.
-              </span>
-            </div>
-
-            <div class="about-point">
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Hands-on experience with New Relic, Dynatrace, Distributed Tracing and Synthetic Monitoring for
-                proactive issue detection and performance optimization.
-              </span>
-            </div>
-
-            <div class="about-point">
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Experienced in troubleshooting production issues using Log4j application logs, Apache server logs and
-                monitoring platforms.
-              </span>
-            </div>
-
-            <div class="about-point">
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Strong expertise in Production Support Operations, Major Incident Management and reducing MTTR for
-                critical business applications.
-              </span>
-            </div>
-
-            <div class="about-point">
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Hands-on experience in deployment validation, release management and CI/CD operations using Harness.
-              </span>
-            </div>
-
-            <div class="about-point">
-              <i class="bi bi-check-circle-fill"></i>
-              <span>
-                Focused on improving platform reliability, automating operational workflows and enhancing observability
-                across modern cloud infrastructures.
-              </span>
-            </div>
-
-          </div>
-
-          <div class="about-highlights">
-
-            <div class="highlight-item">
-              <i class="bi bi-cloud-check"></i>
-              AWS & Private Cloud
-            </div>
-
-            <div class="highlight-item">
-              <i class="bi bi-graph-up-arrow"></i>
-              Monitoring & Observability
-            </div>
-
-            <div class="highlight-item">
-              <i class="bi bi-search"></i>
-              Distributed Tracing
-            </div>
-
-            <div class="highlight-item">
-              <i class="bi bi-broadcast"></i>
-              Synthetic Monitoring
-            </div>
-
-            <div class="highlight-item">
-              <i class="bi bi-exclamation-triangle"></i>
-              Incident Management
-            </div>
-
-            <div class="highlight-item">
-              <i class="bi bi-tools"></i>
-              RCA & Troubleshooting
-            </div>
-
-            <div class="highlight-item">
-              <i class="bi bi-diagram-3"></i>
-              Harness CI/CD
-            </div>
-
-            <div class="highlight-item">
-              <i class="bi bi-cpu"></i>
-              Reliability Engineering
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ======= End About Section ======= -->
-
-  <!-- ======= Skills  ======= -->
-  <div class="skills container">
-
-    <div class="section-title">
-      <h2>Skills</h2>
-    </div>
-
-    <div class="row skills-content">
-
-      <div class="col-lg-6">
-
-        <div class="progress">
-          <span class="skill"> IaaS (infrastructure as a service)<i class="val">80%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">PaaS (platform as a service) <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Terraform & Ansible<i class="val">35%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Docker<i class="val">40%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Kubernates<i class="val">45%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Dynatrace & Splunk<i class="val">70%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-
-        <div class="progress">
-          <span class="skill">Python, JavaScript<i class="val">45%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">CSS, Bootstrap<i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">MSSQL, MS SQL, Oracle<i class="val">65%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Git, GitHub<i class="val">55%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">AutoSys, Clockware/Matrix<i class="val">45%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-        <div class="progress">
-          <span class="skill">Putty<i class="val">70%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div><!-- End Skills -->
-
-  <!-- ======= Interests ======= -->
-  <div class="interests container">
-
-    <div class="section-title">
-      <h2>Interests</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-3 col-md-4">
-        <div class="icon-box">
-          <i class="ri-store-line" style="color: #ffbb2c;"></i>
-          <h3>Application Deployment Management</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-        <div class="icon-box">
-          <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-          <h3>Cloud Technology Optimization</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-        <div class="icon-box">
-          <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-          <h3>Integration and Optimization</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-        <div class="icon-box">
-          <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-          <h3>Database Management</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box">
-          <i class="ri-database-2-line" style="color: #47aeff;"></i>
-          <h3>Cloud Infrastructure Management</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box">
-          <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-          <h3>System Monitoring and Automation</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box">
-          <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-          <h3>Web Development Skills</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box">
-          <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-          <h3>Technical Problem Solving</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box">
-          <i class="ri-anchor-line" style="color: #b2904f;"></i>
-          <h3>Continuous Learning and Certification</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box">
-          <i class="ri-disc-line" style="color: #b20969;"></i>
-          <h3>Web Development</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box">
-          <i class="ri-base-station-line" style="color: #ff5828;"></i>
-          <h3>Optimizing System Performance</h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 mt-4">
-        <div class="icon-box">
-          <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-          <h3>Automation and DevOps Practices</h3>
-        </div>
+      <div class="hero-socials reveal-up" style="--d:0.5s">
+        <a href="https://www.linkedin.com/in/niteesh-kumar-patel-713865189" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/niteeshnkp03g" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/niteesh.kumarpatel/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
 
-  </div><!-- End Interests -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
+    <div class="hero-stats reveal-up" style="--d:0.3s">
+      <div class="stat-card">
+        <div class="stat-num" data-target="4">0</div>
+        <div class="stat-label">Years<br>Experience</div>
       </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Sumary</h3>
-          <div class="resume-item pb-0">
-            <h4>Niteesh Kumar Patel</h4>
-            <p class="p-text"><em>Seeking a dynamic role as a Cloud Engineer with extensive experience in
-                cloud optimization, infrastructure management and cost control. Skilled in enhancing system
-                performance, security, cloud efficiency while reducing expenses and deployment times, increasing
-                productivity through innovative solutions. Holds a Bachelor's degree in Computer Science &
-                Engineering with Honors and multiple certifications, including Professional Cloud DevOps
-                Engineer and Cloud Security Engineer. Proficient in Python, JavaScript, SQL and web development
-                technologies with strong problem-solving, debugging & team collaboration abilities delivering
-                impactful solutions in cloud.</em></p>
-          </div>
-          <h3 class="resume-title">Certifications</h3>
-          <div class="resume-item">
-            <p> Professional Cloud DevOps Engineer Certification </p>
-            <a href="https://www.credly.com/badges/4be2c88f-1ff7-4b47-bf96-ae5cffa658d9">View Certificate</a> &nbsp;
-            <em class="Certificate">Issued Sep 2024</em>
-          </div>
-          <div class="resume-item">
-            <p> Professional Cloud Security Engineer Certification </p>
-            <a href="https://www.credly.com/badges/31523e4b-180c-45a2-9d98-393b6e34bd6c">View Certificate</a> &nbsp;
-            <em class="Certificate">Issued Aug 2024</em>
-          </div>
-          <div class="resume-item">
-            <p>Associate Cloud Engineer
-            <p>
-              <a href="https://google.accredible.com/e7467af3-c632-4cf6-a1e0-ca8604aaa1f4">View Certificate</a> &nbsp;
-              <em class="Certificate">Issued Mar 2024</em>
-          </div>
-          <div class="resume-item">
-            <p> Cloud Digital Leader </p>
-            <a href="https://www.credential.net/b02ecc88-a8f2-4ffa-839d-2e20dbd42a91">View Certificate</a> &nbsp;
-            <em class="Certificate">Issued Mar 2024</em>
-          </div>
-          <div class="resume-item">
-            <p> Oracle Cloud Infrastructure 2024 Certified Foundations Associate </p>
-            <a
-              href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=E271A696DB88DF9C3D95928B41E1532BFAD596A31601503E2C09AC01CF2CCC1A">View
-              Certificate</a> &nbsp;
-            <em class="Certificate">Issued Feb 2025</em>
-          </div>
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Bachelor of Technology in Computer Science Engineering</h4>
-            <h5>2016 - 2020</h5>
-            <p><em>Dr. A. P. J. Abdul Kalam Technical University, Lucknow with <B>Honors</B>.</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>Intermediate &amp; Maths</h4>
-            <h5>2014 - 2015</h5>
-            <p><em> Uttar Pradesh State Board of High School and Intermediate Education, Prayagraj.</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>High School</h4>
-            <h5>2012 - 2013</h5>
-            <p><em>Uttar Pradesh State Board of High School and Intermediate Education, Prayagraj.</em></p>
-            <p> </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>Cloud Engineer at HCL Technologies</h4>
-            <p><em>Noida, Uttar Pradesh</em> | <em>Dec 2021 - Present</em></p>
-            <ul class="p-text">
-              <li>Provided escalation support for staging and production environments, ensuring 99.9% uptime.</li>
-              <li>Diagnosed and resolved complex deployment issues during preparation and installation across PROD, UAT,
-                and DEV environments, reducing resolution time by 15%.</li>
-              <li>Conducted Root Cause Analysis (RCA) investigations for critical incidents, implementing preventive
-                measures.</li>
-              <li>Ensured seamless cloud migration and system integrations across multiple environments.</li>
-              <li>Managed profile retirement, pre /post-release sanity checks on Cloud servers, profile properties
-                allocated and
-                additional resources to apps based upon classified requirement.</li>
-              <li>Strengthened cloud security posture implementing though ERF Sync activities, controller releases,
-                patch
-                management, IAM best practices and vulnerability remediation at OS and application levels.</li>
-              <li>Administered SQL databases (MySQL, MSSQL), performing CRUD operations, backup & recovery</li>
-              <li>Providing on-call support rotations, responding to priority incidents per SLA requirements.</li>
-              <li>Conducted heap and thread dump analysis, improving application performance and reducing downtime.</li>
-              <li>Followed patching SOP (script) and developed Python/Bash scripts for automation of monitoring,
-                reporting,
-                and server health checks.</li>
-              <li>Worked with Docker and Kubernetes to streamline application deployment and management.</li>
-              <li>Maintained FTP profiles and database profiles for secure data transfers and optimized storage.</li>
-            </ul>
-            <p id="project_date">Cloud Engineer Intern <i>08/2021- 12/2021</i></p>
-            <p>
-            <ul class="p-text">
-              <li>Improved cloud infrastructure efficiency through Cloud Controller and Tomcat server optimizations.
-              </li>
-              <li>Monitoring infrastructure using Dynatrace, Prometheus and Grafana reducing manual troubleshooting.
-              </li>
-              <li>Implemented alert suppression and proactive security monitoring to minimize potential breaches</li>
-              <li>Integrated web server mod clusters for efficient load distribution ensuring high-availability service
-                delivery.</li>
-              <li>Managed Group Policy Administration and performed user/group access control management.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="30" data-suffix="K+">0</div>
+        <div class="stat-label">Servers<br>Managed</div>
       </div>
-
+      <div class="stat-card">
+        <div class="stat-num" data-target="99" data-suffix=".9%">0</div>
+        <div class="stat-label">Uptime<br>SLA</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="250" data-suffix="+">0</div>
+        <div class="stat-label">Monthly<br>Incidents</div>
+      </div>
     </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Mayur Vihar Phase 3, Delhi,110096.</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>niteeshnkp03@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p>+91 8756889070</p>
-          </div>
-        </div>
-      </div>
-
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
-
-    </div>
-  </section><!-- End Contact Section -->
-
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-
   </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- ── ABOUT ── -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">01 — About</span>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
 
+    <div class="about-grid">
+      <div class="about-bio reveal-left">
+        <p class="about-intro">
+          Site Reliability Engineer with <strong>4+ years</strong> delivering enterprise resilience across AWS, Private Cloud, and WebSphere environments.
+        </p>
+        <p class="about-body">
+          I specialize in Monitoring, Observability, Incident Management, Root Cause Analysis, and Reliability Engineering. My toolkit spans New Relic, Dynatrace, Distributed Tracing and Synthetic Monitoring for proactive issue detection and performance optimization.
+        </p>
+        <p class="about-body">
+          From heap &amp; thread dump analysis to CI/CD pipelines in Harness, I am focused on reducing MTTR, automating operational workflows, and enhancing observability across modern cloud infrastructures.
+        </p>
+        <div class="about-badges">
+          <span class="badge"><i class="fa fa-cloud"></i> AWS &amp; Private Cloud</span>
+          <span class="badge"><i class="fa fa-chart-line"></i> Monitoring &amp; Observability</span>
+          <span class="badge"><i class="fa fa-search"></i> Distributed Tracing</span>
+          <span class="badge"><i class="fa fa-satellite-dish"></i> Synthetic Monitoring</span>
+          <span class="badge"><i class="fa fa-exclamation-triangle"></i> Incident Management</span>
+          <span class="badge"><i class="fa fa-tools"></i> RCA &amp; Troubleshooting</span>
+          <span class="badge"><i class="fa fa-code-branch"></i> Harness CI/CD</span>
+          <span class="badge"><i class="fa fa-shield-alt"></i> Reliability Engineering</span>
+        </div>
+      </div>
+
+      <div class="about-interests reveal-right">
+        <h3 class="interests-title">Areas of Interest</h3>
+        <div class="interest-list">
+          <div class="interest-item">
+            <div class="interest-icon" style="--ic:#6366f1"><i class="fa fa-rocket"></i></div>
+            <span>Application Deployment Management</span>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon" style="--ic:#f59e0b"><i class="fa fa-cloud"></i></div>
+            <span>Cloud Technology Optimization</span>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon" style="--ic:#10b981"><i class="fa fa-database"></i></div>
+            <span>Database Management</span>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon" style="--ic:#ef4444"><i class="fa fa-server"></i></div>
+            <span>Cloud Infrastructure Management</span>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon" style="--ic:#8b5cf6"><i class="fa fa-robot"></i></div>
+            <span>Automation &amp; DevOps Practices</span>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon" style="--ic:#06b6d4"><i class="fa fa-tachometer-alt"></i></div>
+            <span>System Performance Optimization</span>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon" style="--ic:#f97316"><i class="fa fa-certificate"></i></div>
+            <span>Continuous Learning &amp; Certifications</span>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon" style="--ic:#14b8a6"><i class="fa fa-code"></i></div>
+            <span>Web Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">02 — Skills</span>
+      <h2 class="section-title">What I Work With</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-bar reveal-up" style="--d:0s">
+        <div class="skill-meta">
+          <span class="skill-name">IaaS (Infrastructure as a Service)</span>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.05s">
+        <div class="skill-meta">
+          <span class="skill-name">PaaS (Platform as a Service)</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.1s">
+        <div class="skill-meta">
+          <span class="skill-name">Dynatrace &amp; Splunk</span>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="70"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.15s">
+        <div class="skill-meta">
+          <span class="skill-name">CSS &amp; Bootstrap</span>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.2s">
+        <div class="skill-meta">
+          <span class="skill-name">Putty &amp; Shell Tools</span>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="70"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.25s">
+        <div class="skill-meta">
+          <span class="skill-name">MSSQL / MySQL / Oracle</span>
+          <span class="skill-pct">65%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="65"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.3s">
+        <div class="skill-meta">
+          <span class="skill-name">Git &amp; GitHub</span>
+          <span class="skill-pct">55%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="55"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.35s">
+        <div class="skill-meta">
+          <span class="skill-name">Python &amp; JavaScript</span>
+          <span class="skill-pct">45%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="45"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.4s">
+        <div class="skill-meta">
+          <span class="skill-name">Kubernetes</span>
+          <span class="skill-pct">45%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="45"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.45s">
+        <div class="skill-meta">
+          <span class="skill-name">Docker</span>
+          <span class="skill-pct">40%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="40"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.5s">
+        <div class="skill-meta">
+          <span class="skill-name">AutoSys / Clockware</span>
+          <span class="skill-pct">45%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="45"></div></div>
+      </div>
+      <div class="skill-bar reveal-up" style="--d:0.55s">
+        <div class="skill-meta">
+          <span class="skill-name">Terraform &amp; Ansible</span>
+          <span class="skill-pct">35%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-w="35"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RESUME ── -->
+<section id="resume" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">03 — Resume</span>
+      <h2 class="section-title">My Journey</h2>
+    </div>
+
+    <div class="resume-grid">
+
+      <!-- Left Column -->
+      <div class="resume-col">
+        <h3 class="col-title"><i class="fa fa-briefcase"></i> Experience</h3>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <h4>Cloud Engineer — HCL Technologies</h4>
+              <span class="tl-date">Dec 2021 – Present · Noida, UP</span>
+            </div>
+            <ul class="tl-list">
+              <li>Provided escalation support for staging &amp; production, maintaining <strong>99.9% uptime</strong>.</li>
+              <li>Reduced resolution time by <strong>15%</strong> by diagnosing complex deployment issues across PROD, UAT and DEV.</li>
+              <li>Conducted RCA investigations and implemented preventive measures for critical incidents.</li>
+              <li>Strengthened cloud security via ERF Sync, IAM best practices and vulnerability remediation.</li>
+              <li>Developed Python/Bash scripts for automated monitoring, reporting and server health checks.</li>
+              <li>Administered SQL databases (MySQL, MSSQL) — CRUD, backup &amp; recovery.</li>
+              <li>Worked with Docker &amp; Kubernetes to streamline application deployment.</li>
+              <li>Performed heap &amp; thread dump analysis to improve application performance.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <h4>Cloud Engineer Intern — HCL Technologies</h4>
+              <span class="tl-date">Aug 2021 – Dec 2021</span>
+            </div>
+            <ul class="tl-list">
+              <li>Improved cloud infrastructure efficiency through Cloud Controller &amp; Tomcat server optimizations.</li>
+              <li>Monitored infrastructure via Dynatrace, Prometheus &amp; Grafana, reducing manual troubleshooting.</li>
+              <li>Implemented alert suppression and proactive security monitoring.</li>
+              <li>Integrated web server mod clusters for high-availability load distribution.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="col-title mt-section"><i class="fa fa-graduation-cap"></i> Education</h3>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <h4>B.Tech — Computer Science Engineering (Honors)</h4>
+              <span class="tl-date">2016 – 2020 · AKTU, Lucknow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <h4>Intermediate — Maths</h4>
+              <span class="tl-date">2014 – 2015 · UP State Board, Prayagraj</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <h4>High School</h4>
+              <span class="tl-date">2012 – 2013 · UP State Board, Prayagraj</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="resume-col">
+        <h3 class="col-title"><i class="fa fa-certificate"></i> Certifications</h3>
+
+        <div class="cert-grid">
+          <a href="https://www.credly.com/badges/4be2c88f-1ff7-4b47-bf96-ae5cffa658d9" target="_blank" class="cert-card reveal-up" style="--d:0s">
+            <div class="cert-icon"><i class="fab fa-google"></i></div>
+            <div class="cert-body">
+              <h4>Professional Cloud DevOps Engineer</h4>
+              <span>Sep 2024</span>
+            </div>
+            <i class="fa fa-external-link-alt cert-link-icon"></i>
+          </a>
+
+          <a href="https://www.credly.com/badges/31523e4b-180c-45a2-9d98-393b6e34bd6c" target="_blank" class="cert-card reveal-up" style="--d:0.08s">
+            <div class="cert-icon"><i class="fab fa-google"></i></div>
+            <div class="cert-body">
+              <h4>Professional Cloud Security Engineer</h4>
+              <span>Aug 2024</span>
+            </div>
+            <i class="fa fa-external-link-alt cert-link-icon"></i>
+          </a>
+
+          <a href="https://google.accredible.com/e7467af3-c632-4cf6-a1e0-ca8604aaa1f4" target="_blank" class="cert-card reveal-up" style="--d:0.16s">
+            <div class="cert-icon"><i class="fab fa-google"></i></div>
+            <div class="cert-body">
+              <h4>Associate Cloud Engineer</h4>
+              <span>Mar 2024</span>
+            </div>
+            <i class="fa fa-external-link-alt cert-link-icon"></i>
+          </a>
+
+          <a href="https://www.credential.net/b02ecc88-a8f2-4ffa-839d-2e20dbd42a91" target="_blank" class="cert-card reveal-up" style="--d:0.24s">
+            <div class="cert-icon"><i class="fab fa-google"></i></div>
+            <div class="cert-body">
+              <h4>Cloud Digital Leader</h4>
+              <span>Mar 2024</span>
+            </div>
+            <i class="fa fa-external-link-alt cert-link-icon"></i>
+          </a>
+
+          <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=E271A696DB88DF9C3D95928B41E1532BFAD596A31601503E2C09AC01CF2CCC1A" target="_blank" class="cert-card reveal-up" style="--d:0.32s">
+            <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+            <div class="cert-body">
+              <h4>Oracle Cloud Infrastructure Foundations Associate</h4>
+              <span>Feb 2025</span>
+            </div>
+            <i class="fa fa-external-link-alt cert-link-icon"></i>
+          </a>
+        </div>
+
+        <h3 class="col-title mt-section"><i class="fa fa-user"></i> Summary</h3>
+        <div class="summary-card reveal-up">
+          <p>Seeking a dynamic Cloud Engineering role, bringing expertise in cloud optimization, infrastructure management and cost control. Holds a B.Tech in Computer Science &amp; Engineering with Honors, multiple GCP certifications, and is proficient in Python, JavaScript, SQL and web technologies. Proven track record of enhancing system performance, security and cloud efficiency while reducing deployment times.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">04 — Contact</span>
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <p class="contact-intro">Have a project in mind or want to talk reliability engineering? I'd love to hear from you.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fa fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Mayur Vihar Phase 3, Delhi — 110096</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:niteeshnkp03@gmail.com">niteeshnkp03@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fa fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+918756889070">+91 8756889070</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/niteesh-kumar-patel-713865189" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/niteeshnkp03g" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/niteesh.kumarpatel/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal-right">
+        <div class="form-group">
+          <input type="text" id="cName" placeholder=" " autocomplete="off">
+          <label for="cName">Your Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="cEmail" placeholder=" " autocomplete="off">
+          <label for="cEmail">Your Email</label>
+        </div>
+        <div class="form-group">
+          <input type="text" id="cSubject" placeholder=" " autocomplete="off">
+          <label for="cSubject">Subject</label>
+        </div>
+        <div class="form-group">
+          <textarea id="cMessage" rows="5" placeholder=" "></textarea>
+          <label for="cMessage">Message</label>
+        </div>
+        <button class="btn-primary btn-submit" id="submitBtn">
+          <span>Send Message</span>
+          <i class="fa fa-paper-plane"></i>
+        </button>
+        <div id="formStatus" class="form-status"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>Designed &amp; built by <strong>Niteesh Kumar Patel</strong> &nbsp;·&nbsp; 2025</p>
+</footer>
+
+<script src="main.js"></script>
 </body>
-
 </html>
