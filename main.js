@@ -234,7 +234,7 @@ document.querySelectorAll(".skill-cat-btn").forEach(btn => {
       // Re-trigger animation for newly visible bars
       if (show) {
         const fill = bar.querySelector(".skill-fill");
-        if (fill && fill.style.width === "0%" || fill.style.width === "") {
+        if (fill && (fill.style.width === "0%" || fill.style.width === "")) {
           setTimeout(() => { fill.style.width = fill.dataset.w + "%"; }, 50);
         }
       }
