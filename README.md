@@ -1,0 +1,176 @@
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=6366f1&height=200&section=header&text=Niteesh%20Kumar%20Patel&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Site%20Reliability%20Engineer%20%7C%20Cloud%20Engineer%20%7C%20DevOps&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
+
+<a href="https://niteeshkumarpatel.netlify.app" target="_blank">
+  <img src="https://img.shields.io/badge/🌐 Portfolio-6366f1?style=for-the-badge&logoColor=white" alt="Portfolio"/>
+</a>
+<a href="https://www.linkedin.com/in/niteeshkpatel" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="mailto:niteeshnkp03@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+</a>
+<a href="https://github.com/niteeshnkp03g" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=niteeshnkp03g&label=Profile%20Views&color=6366f1&style=flat" alt="Profile Views"/>
+
+</div>
+
+---
+
+## 👋 Hey, I'm Niteesh
+
+```yaml
+name:       Niteesh Kumar Patel
+role:       Site Reliability Engineer
+company:    Kissht  (prev. HCL Technologies → State Street Corp)
+location:   Noida, Uttar Pradesh, IN
+experience: 4+ years
+focus:
+  - Observability & Monitoring
+  - Incident Management & RCA
+  - Cloud Infrastructure (AWS · GCP · Azure)
+  - CI/CD & Automation
+  - Distributed Tracing & Synthetic Monitoring
+open_to:    [ SRE, DevOps Engineer, Cloud Engineer, Product Support Engineer ]
+```
+
+---
+
+## 🚀 What I Do
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  🔭  Observability   →  New Relic · Prometheus · Grafana        │
+│  🛡️  Reliability     →  99.9% uptime · 30K+ servers             │
+│  ⚡  Automation      →  Python/Bash · 40% manual effort saved   │
+│  📉  Incident Mgmt   →  60% MTTR reduction at Kissht            │
+│  ☁️  Cloud           →  AWS · GCP · Azure · Private Cloud       │
+│  🔁  CI/CD           →  Harness · Jenkins · GitHub Actions      │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🛠️ Tech Stack
+
+#### ☁️ Cloud & Infrastructure
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+
+#### 📊 Monitoring & Observability
+![New Relic](https://img.shields.io/badge/New%20Relic-1CE783?style=flat-square&logo=newrelic&logoColor=black)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Dynatrace](https://img.shields.io/badge/Dynatrace-1496FF?style=flat-square&logo=dynatrace&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
+![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
+
+#### 🔁 DevOps & Automation
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Harness](https://img.shields.io/badge/Harness-00ADE4?style=flat-square&logo=harness&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+
+#### 🗄️ Databases
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
+
+---
+
+## 📌 Featured Projects
+
+<a href="https://github.com/niteeshnkp03g/newrelic-error-rate-alerting">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=niteeshnkp03g&repo=newrelic-error-rate-alerting&theme=tokyonight&border_color=6366f1&title_color=a5b4fc&icon_color=6366f1" />
+</a>
+<a href="https://github.com/niteeshnkp03g/newrelic-response-time-alerting">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=niteeshnkp03g&repo=newrelic-response-time-alerting&theme=tokyonight&border_color=6366f1&title_color=a5b4fc&icon_color=6366f1" />
+</a>
+
+<br/><br/>
+
+### 🔔 New Relic Error Rate Alerting
+> NRQL alert → API Gateway → **AWS Lambda** → Slack  
+> Real-time Open & Resolved incident notifications with IST timestamps.  
+> `Python` `New Relic` `AWS Lambda` `API Gateway` `NRQL` `Slack`
+
+### ⚡ New Relic Response Time Alerting
+> NRQL monitor → API Gateway → **AWS Lambda** → enriched via GraphQL → Slack  
+> Chart visualisation, quiet-hours logic, full lifecycle tracking.  
+> `Python` `New Relic` `GraphQL` `AWS Lambda` `API Gateway` `Slack`
+
+---
+
+## 📈 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=niteeshnkp03g&show_icons=true&theme=tokyonight&border_color=6366f1&title_color=a5b4fc&icon_color=6366f1&text_color=e2e8f0&bg_color=0d1225&hide_border=false&count_private=true" height="165"/>
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=niteeshnkp03g&layout=compact&theme=tokyonight&border_color=6366f1&title_color=a5b4fc&icon_color=6366f1&text_color=e2e8f0&bg_color=0d1225&langs_count=6" height="165"/>
+
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=niteeshnkp03g&theme=tokyonight&border=6366f1&ring=a5b4fc&fire=10b981&currStreakLabel=a5b4fc&sideLabels=a5b4fc&background=0d1225" height="150"/>
+
+</div>
+
+---
+
+## 🏆 Certifications
+
+| Badge | Certification | Issuer | Year |
+|-------|--------------|--------|------|
+| ☁️ | AWS Certified SysOps Administrator – Associate | Amazon Web Services | 2025 |
+| 🔧 | Professional Cloud DevOps Engineer | Google Cloud | Sep 2024 |
+| 🔐 | Professional Cloud Security Engineer | Google Cloud | Aug 2024 |
+| 🎓 | Associate Cloud Engineer | Google Cloud | Mar 2024 |
+| 💡 | Cloud Digital Leader | Google Cloud | Mar 2024 |
+| 🏢 | OCI 2024 Foundations Associate | Oracle | Feb 2025 |
+
+---
+
+## 💼 Experience
+
+```
+🏢  Kissht                   │  Site Reliability Engineer   │  Sep 2025 – Present
+    ├─ 60% MTTR reduction via Prometheus + Grafana + New Relic
+    ├─ 90% troubleshooting effort saved via Python log automation
+    └─ 100+ feature releases monitored (pre + post deployment)
+
+🏢  HCL Technologies          │  Cloud Engineer              │  Dec 2021 – Sep 2025
+    │  Client: State Street Corporation
+    ├─ L2/L3 support for 30,000+ servers at 99.9% uptime
+    ├─ Diagnosed issues via Log4j, Apache logs & distributed tracing
+    ├─ Reduced repeated incidents by 30% via CI/CD automation
+    ├─ Migrated enterprise apps from on-prem → AWS (zero downtime)
+    ├─ Developed Python/Bash scripts → 40% manual workload reduction
+    ├─ Docker & Kubernetes → 25% faster deployment cycles
+    └─ 🏅 Performer of the Month — Jan 2025
+```
+
+---
+
+## 📫 Let's Connect
+
+<div align="center">
+
+I'm open to **SRE · DevOps · Cloud Engineer · Product Support Engineer** roles.
+
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-6366f1?style=for-the-badge)](https://niteeshkumarpatel.netlify.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/niteeshkpatel)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:niteeshnkp03@gmail.com)
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=6366f1&height=100&section=footer&animation=fadeIn" width="100%"/>
